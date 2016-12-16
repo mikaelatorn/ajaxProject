@@ -100,7 +100,7 @@ var movieCount = 0;
 var amountOfMovies = 6;
 
 function getMovies() {
-    $.getJSON('http://netflixroulette.net/api/api.php?actor=Anthony%20Hopkins', function(json){
+    $.getJSON('https://netflixroulette.net/api/api.php?actor=Anthony%20Hopkins', function(json){
         if(json.length !== 0) {
             for(var i = movieCount; i < amountOfMovies; i++) {
                 var movie = {
