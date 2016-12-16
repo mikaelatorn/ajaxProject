@@ -1,0 +1,224 @@
+* { box-sizing: border-box;}
+
+body {
+    text-align: center;4
+    font-family: 'Open Sans', sans-serif;
+}
+
+header { 
+    font-family: mainFont;
+    height: 23em;
+    overflow: hidden;
+    background-image: url('../images/dator2.png');
+    background-size: cover;
+}
+
+
+@font-face {
+    font-family: mainFont;
+    src: url('fonts/personality DEMO.otf')
+}
+
+#header-img { 
+    max-width: 200%;
+    display: block;
+    z-index: 40;
+    top: 0;
+    left: 0;
+}
+
+h1 { 
+    position: absolute;
+    font-size: 3em;
+    color: #FFF;
+    width: 100%;
+    top: 25%; 
+    background-color: rgba(224, 187, 234, 0.9);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+h2 {
+    font-family: mainFont;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid;
+    padding-top: 1em;
+}
+
+nav {
+    font-family: mainFont;
+    background-color: #e0bbea;
+    padding: 0.8em 0;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav a {
+    color: #FFF;
+    padding: 0.5em 0.4em 0 0.4em;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-bottom:  2px solid transparent;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #FFF;
+}
+
+article {
+    background-color: #f4f4f4;
+    width: 100%;
+    margin: 2em 0;
+    overflow-y: hidden;
+    z-index:1;
+}
+
+.blog-posts {
+    padding: 0.7em;
+    max-height: 12em;
+    outline: none;
+    color: #FFF;
+    overflow-wrap: break-word;
+    background-size: cover;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.blog-posts:hover {
+    max-height: 50em;
+    color: #000;
+}
+
+.blog-posts p {
+    padding: 0.5em;
+    text-align: left;
+    visibility: hidden;
+}
+
+.blog-posts:hover p {
+    visibility: visible;
+}
+
+h5 { visibility: hidden;  }
+
+.blog-posts:hover h5 {
+    visibility: visible;
+}
+
+.text-box {
+    height: 95%;
+    width: 90%;
+    margin: auto;
+}
+
+.blog-posts:hover .text-box {
+    background-color: rgba(255, 255, 255, 0.9) ;
+}
+
+.overlay {
+    font-family: mainFont;
+    background-color: rgba(191, 191, 191, 0.7);
+    padding: 0.5em 1em;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+article:nth-child(2n+1) {clear: left;}
+
+#about { 
+    display: none;
+    background-color: #f4f4f4;
+    padding: 0.5em;   
+}
+
+#about-text {
+    padding: 0 1em 1.5em 1em;
+}
+
+#write-post { 
+    display: none;
+    background-color: #f4f4f4;
+    padding: 1em 0.5em;   
+}
+
+.form-group {
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+    text-align: left;
+}
+
+#submit-btn {
+    border: 2px solid #34ACAF;
+    padding: 0.5em 1.5em;
+    color: #34ACAF;
+    background-color: #FFF;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#submit-btn:hover {
+    background-color: #34ACAF;
+    color: #FFF;
+    outline: none;
+}
+
+.text-field {
+    outline: none;
+    display: block;
+    border: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-field:focus {
+    border-color: #34ACAF;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#load-btn {
+    border: none;
+    padding: 1em;
+    outline: none;
+    background-color: #34ACAF;
+    color: #FFF;
+    margin: 1em;
+    border-radius: 0.2em;
+    
+}
+
+#no-data {
+    background-color: #ef7373;
+    color: #fff;
+    padding: 1.5em;
+    display: none;
+    margin: auto;
+}
+
+footer {
+    background-color: #b67aff;
+    padding: 0.5em;
+    color: #FFF;
+}

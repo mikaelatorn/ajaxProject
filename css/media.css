@@ -1,0 +1,6 @@
+a[href="write-post"] {
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: default;
+}
+

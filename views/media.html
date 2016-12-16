@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+	
+</head>
+<body onload="getMovies();" >
+	<header>
+        <h1> Social blogging <br> - A blog for everyone</h1>
+	</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="top" id="top-movies">Top</a>
+        <a href="index.html">Blog</a>
+        <a href="write-post">Write post</a>
+        <a href="about">About</a>
+    </nav>
+	<aside></aside>
+    <section id="write-post">
+        <h2 id="write-title">Write Post</h2>
+        <form onsubmit="submitForm(); return false;" id="write-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="text-field" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="5" class="text-field" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" name="category" class="text-field" id="category" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" name="author" class="text-field" id="author" required>
+            </div>
+            <input type="submit" id="submit-btn">
+        </form>
+    </section>
+    <section id="about">
+        <div id="about-text">
+            <h2>About Social Blogging</h2>
+            <p>Read them all, choose a category, leave a comment or post something yourself. Social Blogging is a mix between a forum and a blog. </p>
+            <p>Click on the media link to view popular movies and music</p>
+            <p>Anyone can post, about anything. Read the most popular posts in the trending category or choose another interest of yours and read related posts. Good luck, have fun and remember: Be nice!</p>
+        </div>
+    </section>
+	<section id="movies">
+        <article>
+          
+        </article>
+        <article>
+           
+        </article>
+	</section>
+    <div style="clear:both;"></div>
+    <section id="load-more">
+        <div id="no-data">
+            <h4>Sorry! There's nothing more to load</h4>
+        </div>
+        <button id="load-btn" onclick="getMovies(); return false;">
+            Load More Videos
+        </button>
+    </section>
+	<footer>
+		&copy; Mikaela Törnlund
+	</footer>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+	<script src="../js/app.js" type="text/javascript"></script>
+    <script src="../js/media.js" type="text/javascript"></script>
+</body>
+</html>
+
+
