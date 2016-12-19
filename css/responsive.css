@@ -46,7 +46,21 @@
     nav a { padding: 0.5em 0.9em 0 0.9em;}
 }
 
-
+@media screen and (min-width: 700px) {
+    .navbar-nav > li {
+        display: inline-block;
+        float: none;
+    }
+    
+    .navbar-default .nav > li > a:hover {
+        border-bottom: 2px solid #FFF;
+        background-color: transparent;
+    }
+    
+    .navbar-default .nav > li > a:focus {
+        background-color: transparent;
+    }
+}
 
 @media screen and (min-width: 900px) {
     

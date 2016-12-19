@@ -1,7 +1,7 @@
 * { box-sizing: border-box;}
 
 body {
-    text-align: center;4
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -29,6 +29,7 @@ header {
 
 h1 { 
     position: absolute;
+    font-family: mainFont;
     font-size: 3em;
     color: #FFF;
     width: 100%;
@@ -42,14 +43,17 @@ h2 {
     font-family: mainFont;
     width: 80%;
     margin: 0 auto;
+    font-size: 1.7em;
     border-bottom: 2px solid;
     padding-top: 1em;
 }
 
-nav {
+.navbar-default {
     font-family: mainFont;
     background-color: #e0bbea;
-    padding: 0.8em 0;
+    text-align: center;
+    border-radius: 0;
+    border: none;
 }
 
 .nav-fixed {
@@ -72,12 +76,36 @@ nav a {
     -o-transition: all .5s ease;
 }
 
-nav a:hover {
-    border-bottom: 2px solid #FFF;
+.navbar-default .navbar-nav > li > a {
+    padding-bottom: 0.2em;
+    font-size: 1.7em;
+    color: #FFF;
+}
+
+.navbar-nav { float: none;}
+
+.navbar-default .nav > li > a:hover {
+    background-color: #c2a1cc;
+    color: #FFF;
+}
+
+.navbar-default .nav > li > a:focus {
+    background-color: #c2a1cc;
+    color: #FFF;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #c2a1cc;
+    border: none;
 }
 
 article {
-    background-color: #f4f4f4;
+    background-color: #34ACAF;
     width: 100%;
     margin: 2em 0;
     overflow-y: hidden;
@@ -117,6 +145,7 @@ h5 { visibility: hidden;  }
 
 .blog-posts:hover h5 {
     visibility: visible;
+    font-weight: bold;
 }
 
 .text-box {
@@ -131,7 +160,7 @@ h5 { visibility: hidden;  }
 
 .overlay {
     font-family: mainFont;
-    background-color: rgba(191, 191, 191, 0.7);
+    background-color: #d8d8d8;
     padding: 0.5em 1em;
     text-align: left;
     font-size: 1.3em;
@@ -153,6 +182,7 @@ article:nth-child(2n+1) {clear: left;}
     display: none;
     background-color: #f4f4f4;
     padding: 1em 0.5em;   
+    margin-top: 3em;
 }
 
 .form-group {
@@ -215,6 +245,10 @@ article:nth-child(2n+1) {clear: left;}
     padding: 1.5em;
     display: none;
     margin: auto;
+}
+
+#movies p {
+    padding: 2em;
 }
 
 footer {

@@ -17,13 +17,17 @@ $(document).ready(function () {
         label.css("color", "#34ACAF");    
     });
     
+    $('.nav a').click(function() {
+        $('.navbar-collapse').collapse('hide');  
+    });
+    
     loadImage();
     
 });
 
 
 function scrollTo() {
-     $('html, body').animate( {scrollTop:400}, '1000');
+     $('html, body').animate( {scrollTop:200}, '1000');
 }
 
 var fixedNav = $('nav').offset().top;
@@ -100,7 +104,7 @@ var movieCount = 0;
 var amountOfMovies = 6;
 
 function getMovies() {
-    $.getJSON('https://netflixroulette.net/api/api.php?actor=Anthony%20Hopkins', function(json){
+    $.getJSON('http://netflixroulette.net/api/api.php?actor=Anthony%20Hopkins', function(json){
         if(json.length !== 0) {
             for(var i = movieCount; i < amountOfMovies; i++) {
                 var movie = {
