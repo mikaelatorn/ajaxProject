@@ -7,7 +7,7 @@ body {
 
 header { 
     font-family: mainFont;
-    height: 23em;
+    height: 26.5em;
     overflow: hidden;
     background-image: url('../images/dator2.png');
     background-size: cover;
@@ -30,7 +30,8 @@ header {
 h1 { 
     position: absolute;
     font-family: mainFont;
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: bold;
     color: #FFF;
     width: 100%;
     top: 25%; 
@@ -42,7 +43,7 @@ h1 {
 h2 {
     font-family: mainFont;
     width: 80%;
-    margin: 0 auto;
+    margin: 0.3em auto;
     font-size: 1.7em;
     border-bottom: 2px solid;
     padding-top: 1em;
@@ -54,6 +55,7 @@ h2 {
     text-align: center;
     border-radius: 0;
     border: none;
+    height: 4em;
 }
 
 .nav-fixed {
@@ -94,7 +96,6 @@ nav a {
     color: #FFF;
 }
 
-
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFF;
 }
@@ -132,7 +133,7 @@ article {
 }
 
 .blog-posts p {
-    padding: 0.5em;
+    padding: 1em;
     text-align: left;
     visibility: hidden;
 }
@@ -146,6 +147,7 @@ h5 { visibility: hidden;  }
 .blog-posts:hover h5 {
     visibility: visible;
     font-weight: bold;
+    padding: 1em;
 }
 
 .text-box {
@@ -163,7 +165,7 @@ h5 { visibility: hidden;  }
     background-color: #d8d8d8;
     padding: 0.5em 1em;
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 article:nth-child(2n+1) {clear: left;}
