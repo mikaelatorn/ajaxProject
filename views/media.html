@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 	
 </head>
-<body onload="getMovies();" >
+<body onload="loadMedia();" >
 	<header>
         <h1> Social blogging <br> - A blog for everyone</h1>
 	</header>
@@ -37,7 +37,6 @@
             </div>
         </div>
     </nav>
-	<aside></aside>
     <section id="write-post">
         <h2 id="write-title">Write Post</h2>
         <form onsubmit="submitForm(); return false;" id="write-form">
@@ -68,20 +67,18 @@
             <p>Anyone can post, about anything. Read the most popular posts in the trending category or choose another interest of yours and read related posts. Good luck, have fun and remember: Be nice!</p>
         </div>
     </section>
+    <section id="filter">
+        <h3>Filtered by top rating</h3>
+        <p>ps. only loaded media will be filtered</p>
+    </section>
 	<section id="movies">
-        <article>
-          
-        </article>
-        <article>
-           
-        </article>
 	</section>
     <div style="clear:both;"></div>
     <section id="load-more">
         <div id="no-data">
             <h4>Sorry! There's nothing more to load</h4>
         </div>
-        <button id="load-btn" onclick="getMovies(); return false;">
+        <button id="load-btn" onclick="loadMedia(); return false;">
             Load More Videos
         </button>
     </section>

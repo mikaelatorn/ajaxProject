@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 	
 </head>
-<body>
+<body onload="loadPosts()">
 	<header>
         <h1> Social blogging <br> - A blog for everyone</h1>
 	</header>
@@ -36,7 +36,6 @@
             </div>
         </div>
     </nav>
-	<aside></aside>
     <section id="write-post">
         <h2 id="write-title">Write Post</h2>
         <form onsubmit="submitForm(); return false;" id="write-form">
@@ -66,51 +65,15 @@
             <p>Anyone can post, about anything. Read the most popular posts in the trending category or choose another interest of yours and read related posts. Good luck, have fun and remember: Be nice!</p>
         </div>
     </section>
+    <section id="filter">
+        <h3>Filtered by new posts</h3>
+        <p>ps. only loaded posts will be filtered</p>
+    </section>
 	<section id="blog-articles">
-        <article>
-            <div class="blog-posts" >
-                <div class="text-box">
-                    <h2>Lorem ipsum</h2>
-                    <p>dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin a orci at pharetra. Phasellus molestie nunc mauris. Sed sagittis tellus vitae porta pellentesque. Quisque metus tortor, sodales sit amet maximus nec, dictum id diam. Quisque feugiat elementum odio non iaculis. Nunc in felis euismod, fermentum justo malesuada, euismod velit. Etiam congue suscipit turpis rhoncus ultrices. Nulla ac lectus eget orci venenatis venenatis. Pellentesque habitant </p>
-                    <h5>Category: morbi tristique</h5>
-                </div>
-            </div>
-            <div class="overlay"> Author: Mikaela T;rnlund <br> 2016-09-12</div>
-        </article>
-        <article>
-            <div class="blog-posts">
-                <div class="text-box">
-                    <h2>Lorem ipsum</h2>
-                    <p>dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin a orci at pharetra. Phasellus molestie nunc mauris. Sed sagittis tellus vitae porta pellentesque. Quisque metus tortor, sodales sit amet maximus nec, dictum id diam. Quisque feugiat elementum odio non iaculis. Nunc in felis euismod, fermentum justo malesuada, euismod velit. Etiam congue suscipit turpis rhoncus ultrices. Nulla ac lectus eget orci venenatis venenatis. Pellentesque habitant </p>
-                    <h5>Category:morbi tristique</h5>
-                </div>
-            </div>
-            <div class="overlay"> Author: Klara Ohlsson <br> 2016-09-01</div>
-        </article>
-        <article>
-            <div class="blog-posts" >
-                <div class="text-box">
-                    <h2>Lorem ipsum</h2>
-                    <p>dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin a orci at pharetra. Phasellus molestie nunc mauris. Sed sagittis tellus vitae porta pellentesque. Quisque metus tortor, sodales sit amet maximus nec, dictum id diam. Quisque feugiat elementum odio non iaculis. Nunc in felis euismod, fermentum justo malesuada, euismod velit. Etiam congue suscipit turpis rhoncus ultrices. Nulla ac lectus eget orci venenatis venenatis. Pellentesque habitant </p>
-                    <h5>Category: morbi tristique</h5>
-                </div>
-            </div>
-            <div class="overlay"> Author: Mikaela T;rnlund <br> 2016-08-28</div>
-        </article>
-        <article>
-            <div class="blog-posts">
-                <div class="text-box">
-                    <h2>Lorem ipsum</h2>
-                    <p>dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin a orci at pharetra. Phasellus molestie nunc mauris. Sed sagittis tellus vitae porta pellentesque. Quisque metus tortor, sodales sit amet maximus nec, dictum id diam. Quisque feugiat elementum odio non iaculis. Nunc in felis euismod, fermentum justo malesuada, euismod velit. Etiam congue suscipit turpis rhoncus ultrices. Nulla ac lectus eget orci venenatis venenatis. Pellentesque habitant </p>
-                    <h5>Category:morbi tristique</h5>
-                </div>
-            </div>
-            <div class="overlay"> Author: Klara Ohlsson <br> 2016-08-17</div>
-        </article>
 	</section>
     <div style="clear:both;"></div>
     <section id="load-more">
-        <button id="load-btn" onclick="loadMore(); return false;">
+        <button id="load-btn" onclick="loadPosts(); return false;">
             Load More Articles
         </button>
     </section>
@@ -119,7 +82,7 @@
 	</footer>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/app.js" ></script>
     <script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>

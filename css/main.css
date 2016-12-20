@@ -43,10 +43,16 @@ h1 {
 h2 {
     font-family: mainFont;
     width: 80%;
-    margin: 0.3em auto;
+    margin: 0.4em auto;
     font-size: 1.7em;
     border-bottom: 2px solid;
     padding-top: 1em;
+}
+
+h3 { 
+    font-family: mainFont; 
+    font-size: 2em;
+    margin-top: 0.1em;
 }
 
 .navbar-default {
@@ -58,11 +64,14 @@ h2 {
     height: 4em;
 }
 
+.navbar { margin-bottom: 0;}
+
 .nav-fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10000000;
 }
 
 nav a {
@@ -84,7 +93,10 @@ nav a {
     color: #FFF;
 }
 
-.navbar-nav { float: none;}
+.navbar-nav { 
+    float: none;
+    background-color: #e0bbea;
+}
 
 .navbar-default .nav > li > a:hover {
     background-color: #c2a1cc;
@@ -106,18 +118,19 @@ nav a {
 }
 
 article {
-    background-color: #34ACAF;
+    background-color: #aad8e2;
     width: 100%;
     margin: 2em 0;
-    overflow-y: hidden;
-    z-index:1;
+    overflow-y: visible;
+    height: 18em;
 }
 
 .blog-posts {
     padding: 0.7em;
-    max-height: 12em;
+    max-height: 13em;
     outline: none;
     color: #FFF;
+    background-color: #aad8e2;
     overflow-wrap: break-word;
     background-size: cover;
     transition: all .5s ease;
@@ -125,17 +138,24 @@ article {
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
+    position:relative;
 }
 
 .blog-posts:hover {
     max-height: 50em;
     color: #000;
+    z-index: 9999;
 }
 
 .blog-posts p {
     padding: 1em;
     text-align: left;
     visibility: hidden;
+}
+
+.blog-posts:hover article {
+    z-index: 999999;
+    position: absolute;
 }
 
 .blog-posts:hover p {
@@ -158,14 +178,22 @@ h5 { visibility: hidden;  }
 
 .blog-posts:hover .text-box {
     background-color: rgba(255, 255, 255, 0.9) ;
+     z-index: 9999;
+}
+
+article:hover .overlay {
+    z-index: 9999;
+    max-height: 3.35em;
 }
 
 .overlay {
     font-family: mainFont;
     background-color: #d8d8d8;
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     text-align: left;
     font-size: 1.5em;
+    position:relative;
+    height: 3.35em;
 }
 
 article:nth-child(2n+1) {clear: left;}
@@ -183,9 +211,18 @@ article:nth-child(2n+1) {clear: left;}
 #write-post { 
     display: none;
     background-color: #f4f4f4;
-    padding: 1em 0.5em;   
-    margin-top: 3em;
+    padding: 4em 0.5em 1em 0.5em;   
 }
+
+#filter {
+    display: none;
+    background-color: #fc9fd5;
+    width: 40%;
+    margin: 4em auto 0 auto;
+    padding: 3em;
+    color: #FFF;
+}
+
 
 .form-group {
     display: block;
@@ -196,8 +233,9 @@ article:nth-child(2n+1) {clear: left;}
 
 #submit-btn {
     border: 2px solid #34ACAF;
-    padding: 0.5em 1.5em;
+    padding: 0.7em 2em;
     color: #34ACAF;
+    border-radius: 0.2em;
     background-color: #FFF;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -236,7 +274,7 @@ article:nth-child(2n+1) {clear: left;}
     outline: none;
     background-color: #34ACAF;
     color: #FFF;
-    margin: 1em;
+    margin: 5em 0 3em 0;
     border-radius: 0.2em;
     
 }
@@ -244,7 +282,7 @@ article:nth-child(2n+1) {clear: left;}
 #no-data {
     background-color: #ef7373;
     color: #fff;
-    padding: 1.5em;
+    padding: 3em;
     display: none;
     margin: auto;
 }
