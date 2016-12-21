@@ -6,7 +6,8 @@ Link to project : http://129.16.155.13:81
   My ajax project is a blog where you can read old blog posts and post your own. You can sort by newly added posts or other categories. You can also browse the media library that conatins "recommended" movies and books. 
 
 ### Technologies used for this project : 
-    - Html/CSS 
+   
+   - Html/CSS 
    - Bootstrap   
    - Jquery  
    - Ajax 
