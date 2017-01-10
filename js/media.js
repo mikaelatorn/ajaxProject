@@ -9,14 +9,10 @@ function getTopMovies() { // Get most popular movies
     for (var i = 0; i < rating.length; i++) {
         var text = rating[i].innerText;
         var number = text.match(getNum);
-        if(number == undefined || number[0] < 4 && number[1] == null || number[0] < 4 && number[1] < 5) {
-            rating[i].style.display = 'none';
-            rating[i].previousSibling.style.display = 'none';
-            var header = document.createElement("h2");
-            var text = document.createTextNode("This low rated post was removed");
-            header.appendChild(text);
-            rating[i].parentNode.appendChild(header);
+        if(number == null || number[0] < 3 && number[1] == null || number[0] <= 3 && number[1] < 5) { // check the rating of the movie/book
+            rating[i].parentNode.style.display = 'none';
+            rating[i].parentNode.nextSibling.style.display = 'none';
         }
     }
-    document.getElementById('filter').style.display = 'block';
+    $("#filter").fadeIn(800);
 }

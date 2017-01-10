@@ -10,14 +10,10 @@ function getNewPosts() { // get recent posts
         var text = extractedNum[i].innerText;
         var number = text.match(getNum);
         if(number[0] !== '2016') {
-            extractedNum[i].style.display = 'none';
-            extractedNum[i].previousSibling.style.display = 'none';
-            var header = document.createElement("h2");
-            var text = document.createTextNode("This old post was removed");
-            header.appendChild(text);
-            extractedNum[i].parentNode.appendChild(header);
+            extractedNum[i].parentNode.style.display = 'none';
+            extractedNum[i].parentNode.nextSibling.style.display = 'none';
         }
     }
-    document.getElementById('filter').style.display = 'block';
+    $("#filter").fadeIn(800);
 }
 

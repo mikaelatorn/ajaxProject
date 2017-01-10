@@ -9,7 +9,7 @@
     article { 
         width: 80%;
         display: block;
-        margin: 2em auto;
+        margin: 4em auto;
         border-radius: 0.2em;
     }
     
@@ -28,8 +28,49 @@
 
 @media screen and (min-width: 700px) {
     
+    article { margin: 4em auto;}
+    
     #header-img { 
         max-width: 100%;
+    }
+    
+    .text-box {
+        float: left;
+        height: 10em;
+        width: 10em;
+        margin-right: 1em;
+    }
+    
+    hr {
+        border-top: 1px solid #eee;
+        width: 80%;
+    }
+    
+    #blog-articles .text-box {
+        height: 10em;
+    }
+    
+    .overlay {
+        float: left;
+        text-align: left;
+        width: 70%;
+        margin-left: 11em;
+    }
+    
+    .blog-posts h2 {
+        text-align: left;
+        padding: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .blog-posts { 
+        padding: 0 0.7em;
+    }
+    
+    .blog-posts p {  
+        margin-left: 8em; 
+        padding-right: 0;
     }
     
     h1 { 
@@ -45,7 +86,7 @@
     
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .navbar-nav > li {
         display: inline-block;
         float: none;
@@ -61,13 +102,17 @@
     }
     
     .navbar-nav > li {
-       padding: 0.3em 0.5em;
+       padding: 0.3em 1em;
     }
+    
+    .navbar-nav>li>a { padding-top: 10px;}
     
      nav a { padding: 0.5em 1em 0 1em;}
 }
 
 @media screen and (min-width: 900px) {
+    
+    article { width:85%;}
     
     header { height: 32em;}
     
@@ -76,15 +121,14 @@
         margin: 1em 25%;
         padding: 1em;
     }
-
-    article {
-        width: 45%;
-        margin: 5% 2.5%;
-        float: left;
+    
+    #filter {
+        width: 50%;
+        margin-top: 3.5em;
     }
     
     #blog-articles { 
-        width: 80%;
+        width: 89%;
         margin: 1.5em auto;
     }
     
@@ -93,8 +137,6 @@
         margin: 1.5em auto;
     }
     
-    .blog-posts p { padding: 1em;}
-    
     #write-form { width: 40%;}
     #about-text { width: 50%;}
     
@@ -102,19 +144,29 @@
     
 }
 
+@media screen and (min-width: 1000px) {
+    article { width: 75%;}
+
+}
+
 @media screen and (min-width: 1200px) {
     header { height: 40em;}
     
-    h1 { top: 30%; }
+    h1 { top: 31%; }
     
-    article {
+    #filter { 
         width: 40%;
-        margin: 5%;
-        float: left;
+        margin-top: 4.5em;
+    }
+    
+    .navbar-nav > li {
+       padding: 0.3em 1.5em;
     }
     
     #write-form { width: 30%;}
     #about-text { width: 40%;}
 
     #write-title { width: 30%;}
+    
+    article { width: 60%;}
 }
