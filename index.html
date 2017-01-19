@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" href="aos-master/dist/aos.css" />
 </head>
 <body onload="loadPosts()">
 	<header>
@@ -38,7 +37,7 @@
         </div>
     </nav>
     <section id="write-post">
-        <h2 id="write-title">Write Post</h2>
+        <h2 id="write-title" class="info-header">Write Post</h2>
         <form onsubmit="submitForm(); return false;" id="write-form">
             <div class="form-group">
                 <label for="title">Title</label>
@@ -52,12 +51,12 @@
                 <label for="author">Author</label>
                 <input type="text" name="author" class="text-field" id="author" required>
             </div>
-            <input type="submit" id="submit-btn">
+            <input value="Submit" type="submit" id="submit-btn">
         </form>
     </section>
     <section id="about">
         <div id="about-text">
-            <h2>About Social Blogging</h2>
+            <h2 class="info-header">About Social Blogging</h2>
             <p>Welcome to this blog. Here you can read blog posts from different people from all around the internet, if you want to pick and choose, filter by new posts or top rated movies and books. If you feel like it, go post something yourself. Social Blogging is a mix between a forum and a blog. </p>
             <p>Anyone can post, about anything. Good luck, have fun and remember: Be nice!</p>
         </div>

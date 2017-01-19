@@ -204,6 +204,10 @@ article p {
     padding: 1em 1em 1.5em 1em;
 }
 
+.info-header {
+    font-size: 1.5em;
+}
+
 /* WRITE POST FORM AND SECTION*/
 
 #write-post { 
@@ -224,6 +228,7 @@ article p {
     border: 2px solid #34ACAF;
     padding: 0.7em 2em;
     color: #34ACAF;
+    margin: 1em;
     border-radius: 0.2em;
     background-color: #FFF;
     transition: all .5s ease;
@@ -238,6 +243,8 @@ article p {
     color: #FFF;
     outline: none;
 }
+
+label { font-weight: 100;}
 
 .text-field {
     outline: none;
